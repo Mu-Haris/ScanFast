@@ -1,0 +1,43 @@
+/* Shared base style for ScanFast legal + support pages. */
+:root {
+  --bg: #FAF7F2;
+  --card: #FFFFFF;
+  --text: #1F1B16;
+  --text2: #5C5650;
+  --accent: #FF6A3D;
+  --border: rgba(0,0,0,0.08);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+.topnav { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+.topnav .pill { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: var(--accent); color: #fff; border-radius: 10px; font-weight: 900; text-decoration: none; }
+.topnav a.home { color: var(--text); text-decoration: none; font-weight: 800; font-size: 17px; letter-spacing: -0.3px; }
+.topnav a.home .accent { color: var(--accent); }
+.topnav nav { margin-left: auto; display: flex; gap: 16px; }
+.topnav nav a { color: var(--text2); text-decoration: none; font-size: 14px; font-weight: 600; }
+.topnav nav a:hover { color: var(--accent); }
+h1 { font-size: 34px; font-weight: 900; margin: 0 0 6px; letter-spacing: -0.6px; }
+.meta { color: var(--text2); font-size: 14px; margin: 0 0 28px; }
+h2 { font-size: 20px; font-weight: 800; margin: 32px 0 10px; letter-spacing: -0.2px; }
+h3 { font-size: 16px; font-weight: 700; margin: 22px 0 8px; }
+p, li { color: var(--text2); font-size: 15px; }
+p { margin: 0 0 14px; }
+ul { padding-left: 22px; margin: 0 0 14px; }
+li { margin-bottom: 6px; }
+a { color: var(--accent); }
+strong { color: var(--text); }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px 22px; margin: 20px 0; }
+footer { text-align: center; color: var(--text2); font-size: 13px; padding-top: 32px; border-top: 1px solid var(--border); margin-top: 40px; }
+footer a { color: var(--accent); text-decoration: none; }
+@media (max-width: 600px) {
+  h1 { font-size: 28px; }
+  .wrap { padding: 28px 18px 60px; }
+}
