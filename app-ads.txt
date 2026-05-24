@@ -1,7 +1,4 @@
 # app-ads.txt for ScanFast (iOS)
-# https://iabtechlab.com/wp-content/uploads/2019/03/app-ads.txt-v1.0-final-.pdf
-#
-# AdMob verification: replace pub-XXXXXXXXXXXXXXXX with your AdMob
-# Publisher ID (Account > Account information > Publisher ID).
+# Spec: https://iabtechlab.com/wp-content/uploads/2019/03/app-ads.txt-v1.0-final-.pdf
 # Format: <domain>, <publisher_id>, <relationship>, <certification_authority_id>
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-8234392075217497, DIRECT, f08c47fec0942fa0
